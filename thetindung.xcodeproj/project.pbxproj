@@ -97,12 +97,10 @@
 		C6E83A94211B58FA00AE8E13 /* thetindung */ = {
 			isa = PBXGroup;
 			children = (
-				C6E83A95211B58FA00AE8E13 /* AppDelegate.swift */,
-				C6E83A97211B58FA00AE8E13 /* ViewController.swift */,
-				C6E83A99211B58FA00AE8E13 /* Main.storyboard */,
-				C6E83A9C211B58FA00AE8E13 /* Assets.xcassets */,
-				C6E83A9E211B58FA00AE8E13 /* LaunchScreen.storyboard */,
-				C6E83AA1211B58FA00AE8E13 /* Info.plist */,
+				C6E83AC4211B645600AE8E13 /* Controllers */,
+				C6E83AC5211B646700AE8E13 /* Views */,
+				C6E83AC6211B647400AE8E13 /* Models */,
+				C6E83AC7211B64BF00AE8E13 /* SupportFiles */,
 			);
 			path = thetindung;
 			sourceTree = "<group>";
@@ -123,6 +121,40 @@
 				C6E83AB7211B58FA00AE8E13 /* Info.plist */,
 			);
 			path = thetindungUITests;
+			sourceTree = "<group>";
+		};
+		C6E83AC4211B645600AE8E13 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C6E83AC5211B646700AE8E13 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C6E83A97211B58FA00AE8E13 /* ViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C6E83AC6211B647400AE8E13 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C6E83AC7211B64BF00AE8E13 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C6E83A95211B58FA00AE8E13 /* AppDelegate.swift */,
+				C6E83A99211B58FA00AE8E13 /* Main.storyboard */,
+				C6E83A9C211B58FA00AE8E13 /* Assets.xcassets */,
+				C6E83A9E211B58FA00AE8E13 /* LaunchScreen.storyboard */,
+				C6E83AA1211B58FA00AE8E13 /* Info.plist */,
+			);
+			path = SupportFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -428,7 +460,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6LXR55NVD3;
-				INFOPLIST_FILE = thetindung/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/thetindung/SupportFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tinyworld.thetindung;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -443,7 +475,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6LXR55NVD3;
-				INFOPLIST_FILE = thetindung/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/thetindung/SupportFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tinyworld.thetindung;
 				PRODUCT_NAME = "$(TARGET_NAME)";
