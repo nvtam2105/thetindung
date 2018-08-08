@@ -14,6 +14,8 @@
 		C6E83AA0211B58FA00AE8E13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6E83A9E211B58FA00AE8E13 /* LaunchScreen.storyboard */; };
 		C6E83AAB211B58FA00AE8E13 /* thetindungTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E83AAA211B58FA00AE8E13 /* thetindungTests.swift */; };
 		C6E83AB6211B58FA00AE8E13 /* thetindungUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E83AB5211B58FA00AE8E13 /* thetindungUITests.swift */; };
+		C6E83ACB211B6D0E00AE8E13 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E83ACA211B6D0E00AE8E13 /* Card.swift */; };
+		C6E83ACD211B6D2B00AE8E13 /* CardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E83ACC211B6D2B00AE8E13 /* CardList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		C6E83AB1211B58FA00AE8E13 /* thetindungUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = thetindungUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6E83AB5211B58FA00AE8E13 /* thetindungUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thetindungUITests.swift; sourceTree = "<group>"; };
 		C6E83AB7211B58FA00AE8E13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6E83ACA211B6D0E00AE8E13 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		C6E83ACC211B6D2B00AE8E13 /* CardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,7 @@
 		C6E83AC4211B645600AE8E13 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C6E83A97211B58FA00AE8E13 /* ViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -133,7 +138,7 @@
 		C6E83AC5211B646700AE8E13 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C6E83A97211B58FA00AE8E13 /* ViewController.swift */,
+				C6E83ACC211B6D2B00AE8E13 /* CardList.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 		C6E83AC6211B647400AE8E13 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C6E83ACA211B6D0E00AE8E13 /* Card.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -292,7 +298,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6E83A98211B58FA00AE8E13 /* ViewController.swift in Sources */,
+				C6E83ACB211B6D0E00AE8E13 /* Card.swift in Sources */,
 				C6E83A96211B58FA00AE8E13 /* AppDelegate.swift in Sources */,
+				C6E83ACD211B6D2B00AE8E13 /* CardList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
