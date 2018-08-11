@@ -1,0 +1,6 @@
+framework module Pods_thetindung {
+  umbrella header "Pods-thetindung-umbrella.h"
+
+  export *
+  module * { export * }
+}

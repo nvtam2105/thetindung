@@ -1,0 +1,6 @@
+framework module Pods_thetindungUITests {
+  umbrella header "Pods-thetindungUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
