@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FBSDKLoginKit
+import Firebase
 
 class HomeController: UIViewController {
     override func viewDidLoad() {
@@ -22,10 +24,16 @@ class HomeController: UIViewController {
     }
     
     @objc func handleSignOut() {
-        UserDefaults.standard.setIsLoggedIn(value: false)
-        
-        let loginController = LoginController()
-        present(loginController, animated: true, completion: nil)
+        do {
+            print("Successfully logged out with our user: ", Auth.auth().currentUser ?? "")
+            try Auth.auth().signOut()
+            UserDefaults.standard.setIsLoggedIn(value: false)
+            let loginController = LoginController()
+            present(loginController, animated: true, completion: nil)
+        } catch let error {
+            // handle error here
+            print("Error trying to sign out of Firebase: \(error.localizedDescription)")
+        }
     }
     
 }

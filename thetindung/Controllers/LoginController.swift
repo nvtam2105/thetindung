@@ -49,7 +49,7 @@ class LoginController: UIViewController, UICollectionViewDataSource, UICollectio
         pc.numberOfPages = self.pages.count + 1
         return pc
     }()
-    
+
     lazy var skipButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Skip", for: .normal)
@@ -230,7 +230,7 @@ class LoginController: UIViewController, UICollectionViewDataSource, UICollectio
     @objc func handleCustomFBLogin() {
         FBSDKLoginManager().logIn(withReadPermissions: ["email"], from: self) { (result, err) in
             if err != nil {
-                print("Custom FB Login failed:", err)
+                print("Custom FB Login failed:", err ?? "")
                 return
             }
             
@@ -263,6 +263,7 @@ class LoginController: UIViewController, UICollectionViewDataSource, UICollectio
             }
             
             print("Successfully logged in with our user: ", user ?? "")
+            self.finishLoggingIn()
         })
         
         FBSDKGraphRequest(graphPath: "/me", parameters: ["fields": "id, name, email"]).start { (connection, result, err) in
