@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import FBSDKCoreKit
+import Firebase
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,8 +25,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.rootViewController = MainNavigationController()
         
+        FirebaseApp.configure()
         
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+    
         return true
+    }
+    
+    func application(_ application: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        
+        let handled = FBSDKApplicationDelegate.sharedInstance().application(application, open: url, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String?, annotation: options[UIApplicationOpenURLOptionsKey.annotation])
+        
+        return handled
     }
     
     func applicationWillResignActive(_ application: UIApplication) {

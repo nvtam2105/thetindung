@@ -6,15 +6,10 @@ target 'thetindung' do
   use_frameworks!
 
   # Pods for thetindung
-
-  target 'thetindungTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'thetindungUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+  pod 'FBSDKCoreKit'
+  pod 'FBSDKShareKit'
+  pod 'FBSDKLoginKit'
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
 
 end
