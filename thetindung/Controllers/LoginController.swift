@@ -200,9 +200,11 @@ class LoginController: UIViewController, UICollectionViewDataSource, UICollectio
     func finishLoggingIn() {
         //we'll perhaps implement the home controller a little later
         let rootViewController = UIApplication.shared.keyWindow?.rootViewController
-        guard let mainNavigationController = rootViewController as? MainNavigationController else { return }
+        guard let mainNavigationController = rootViewController as? NavigationController else { return }
         
-        mainNavigationController.viewControllers = [HomeController()]
+        let layout = UICollectionViewFlowLayout()
+        let homeController = HomeController(collectionViewLayout: layout)
+        mainNavigationController.viewControllers = [homeController]
         
         UserDefaults.standard.setIsLoggedIn(value: true)
         
