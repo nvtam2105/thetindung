@@ -62,7 +62,7 @@
 		8FBE2F4C85F502D2D9BA4993 /* Pods-thetindung.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thetindung.release.xcconfig"; path = "Pods/Target Support Files/Pods-thetindung/Pods-thetindung.release.xcconfig"; sourceTree = "<group>"; };
 		C636E2A92120875D004DEA6F /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
 		C636E2AB212087B4004DEA6F /* CreditCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardCell.swift; sourceTree = "<group>"; };
-		C636E2AD212088F4004DEA6F /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirestoreService.swift; path = thetindung/Views/FirestoreService.swift; sourceTree = SOURCE_ROOT; };
+		C636E2AD212088F4004DEA6F /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirestoreService.swift; path = thetindung/Services/FirestoreService.swift; sourceTree = SOURCE_ROOT; };
 		C6E83A92211B58FA00AE8E13 /* thetindung.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thetindung.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6E83A95211B58FA00AE8E13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6E83A9A211B58FA00AE8E13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -103,14 +103,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		23928D0A211F4844003F83EB /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				C636E2AD212088F4004DEA6F /* FirestoreService.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
 		239F2F34211E8B0100C3225F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +131,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C636E2AF212090EF004DEA6F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C636E2AD212088F4004DEA6F /* FirestoreService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		C6E83A89211B58FA00AE8E13 = {
 			isa = PBXGroup;
 			children = (
@@ -164,7 +164,7 @@
 		C6E83A94211B58FA00AE8E13 /* thetindung */ = {
 			isa = PBXGroup;
 			children = (
-				23928D0A211F4844003F83EB /* Services */,
+				C636E2AF212090EF004DEA6F /* Services */,
 				C6E83AC4211B645600AE8E13 /* Controllers */,
 				C6E83AC5211B646700AE8E13 /* Views */,
 				C6E83AC6211B647400AE8E13 /* Models */,
