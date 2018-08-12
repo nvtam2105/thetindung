@@ -17,6 +17,9 @@
 		239F2F37211E8B1800C3225F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F2F35211E8B1800C3225F /* Extensions.swift */; };
 		239F2F38211E8B1800C3225F /* UserDefaults+helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F2F36211E8B1800C3225F /* UserDefaults+helpers.swift */; };
 		8E887B10139C6B002EF6D1D2 /* Pods_thetindung.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 622267068D3306F83BA3E1E6 /* Pods_thetindung.framework */; };
+		C636E2AA2120875D004DEA6F /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C636E2A92120875D004DEA6F /* CreditCard.swift */; };
+		C636E2AC212087B5004DEA6F /* CreditCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C636E2AB212087B4004DEA6F /* CreditCardCell.swift */; };
+		C636E2AE212088F4004DEA6F /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C636E2AD212088F4004DEA6F /* FirestoreService.swift */; };
 		C6E83A96211B58FA00AE8E13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E83A95211B58FA00AE8E13 /* AppDelegate.swift */; };
 		C6E83A9B211B58FA00AE8E13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6E83A99211B58FA00AE8E13 /* Main.storyboard */; };
 		C6E83A9D211B58FA00AE8E13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6E83A9C211B58FA00AE8E13 /* Assets.xcassets */; };
@@ -57,6 +60,9 @@
 		239F2F36211E8B1800C3225F /* UserDefaults+helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+helpers.swift"; sourceTree = "<group>"; };
 		622267068D3306F83BA3E1E6 /* Pods_thetindung.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_thetindung.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FBE2F4C85F502D2D9BA4993 /* Pods-thetindung.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thetindung.release.xcconfig"; path = "Pods/Target Support Files/Pods-thetindung/Pods-thetindung.release.xcconfig"; sourceTree = "<group>"; };
+		C636E2A92120875D004DEA6F /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
+		C636E2AB212087B4004DEA6F /* CreditCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardCell.swift; sourceTree = "<group>"; };
+		C636E2AD212088F4004DEA6F /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirestoreService.swift; path = thetindung/Views/FirestoreService.swift; sourceTree = SOURCE_ROOT; };
 		C6E83A92211B58FA00AE8E13 /* thetindung.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thetindung.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6E83A95211B58FA00AE8E13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6E83A9A211B58FA00AE8E13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -100,6 +106,7 @@
 		23928D0A211F4844003F83EB /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				C636E2AD212088F4004DEA6F /* FirestoreService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -200,6 +207,7 @@
 			children = (
 				239F2F30211E8AED00C3225F /* LoginCell.swift */,
 				239F2F2E211E8AED00C3225F /* IntroPageCell.swift */,
+				C636E2AB212087B4004DEA6F /* CreditCardCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				239F2F2F211E8AED00C3225F /* Page.swift */,
+				C636E2A92120875D004DEA6F /* CreditCard.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -428,11 +437,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				239F2F2B211E8AD700C3225F /* NavigationController.swift in Sources */,
+				C636E2AE212088F4004DEA6F /* FirestoreService.swift in Sources */,
 				239F2F38211E8B1800C3225F /* UserDefaults+helpers.swift in Sources */,
 				239F2F2C211E8AD700C3225F /* HomeController.swift in Sources */,
 				C6E83A96211B58FA00AE8E13 /* AppDelegate.swift in Sources */,
+				C636E2AC212087B5004DEA6F /* CreditCardCell.swift in Sources */,
 				239F2F32211E8AED00C3225F /* Page.swift in Sources */,
 				239F2F33211E8AED00C3225F /* LoginCell.swift in Sources */,
+				C636E2AA2120875D004DEA6F /* CreditCard.swift in Sources */,
 				239F2F31211E8AED00C3225F /* IntroPageCell.swift in Sources */,
 				239F2F37211E8B1800C3225F /* Extensions.swift in Sources */,
 				239F2F2D211E8AD700C3225F /* LoginController.swift in Sources */,
