@@ -12,7 +12,7 @@
 		239F2F2C211E8AD700C3225F /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F2F29211E8AD700C3225F /* HomeController.swift */; };
 		239F2F2D211E8AD700C3225F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F2F2A211E8AD700C3225F /* LoginController.swift */; };
 		239F2F31211E8AED00C3225F /* IntroPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F2F2E211E8AED00C3225F /* IntroPageCell.swift */; };
-		239F2F32211E8AED00C3225F /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F2F2F211E8AED00C3225F /* Page.swift */; };
+		239F2F32211E8AED00C3225F /* IntroPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F2F2F211E8AED00C3225F /* IntroPage.swift */; };
 		239F2F33211E8AED00C3225F /* LoginCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F2F30211E8AED00C3225F /* LoginCell.swift */; };
 		239F2F37211E8B1800C3225F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F2F35211E8B1800C3225F /* Extensions.swift */; };
 		239F2F38211E8B1800C3225F /* UserDefaults+helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F2F36211E8B1800C3225F /* UserDefaults+helpers.swift */; };
@@ -20,6 +20,7 @@
 		C636E2AA2120875D004DEA6F /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C636E2A92120875D004DEA6F /* CreditCard.swift */; };
 		C636E2AC212087B5004DEA6F /* CreditCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C636E2AB212087B4004DEA6F /* CreditCardCell.swift */; };
 		C636E2AE212088F4004DEA6F /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C636E2AD212088F4004DEA6F /* FirestoreService.swift */; };
+		C66E2FC02120A400009750C6 /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66E2FBF2120A400009750C6 /* BaseCell.swift */; };
 		C6E83A96211B58FA00AE8E13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E83A95211B58FA00AE8E13 /* AppDelegate.swift */; };
 		C6E83A9B211B58FA00AE8E13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6E83A99211B58FA00AE8E13 /* Main.storyboard */; };
 		C6E83A9D211B58FA00AE8E13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6E83A9C211B58FA00AE8E13 /* Assets.xcassets */; };
@@ -54,7 +55,7 @@
 		239F2F29211E8AD700C3225F /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		239F2F2A211E8AD700C3225F /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		239F2F2E211E8AED00C3225F /* IntroPageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroPageCell.swift; sourceTree = "<group>"; };
-		239F2F2F211E8AED00C3225F /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		239F2F2F211E8AED00C3225F /* IntroPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroPage.swift; sourceTree = "<group>"; };
 		239F2F30211E8AED00C3225F /* LoginCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginCell.swift; sourceTree = "<group>"; };
 		239F2F35211E8B1800C3225F /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		239F2F36211E8B1800C3225F /* UserDefaults+helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+helpers.swift"; sourceTree = "<group>"; };
@@ -63,6 +64,7 @@
 		C636E2A92120875D004DEA6F /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
 		C636E2AB212087B4004DEA6F /* CreditCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardCell.swift; sourceTree = "<group>"; };
 		C636E2AD212088F4004DEA6F /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirestoreService.swift; path = thetindung/Services/FirestoreService.swift; sourceTree = SOURCE_ROOT; };
+		C66E2FBF2120A400009750C6 /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
 		C6E83A92211B58FA00AE8E13 /* thetindung.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thetindung.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6E83A95211B58FA00AE8E13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6E83A9A211B58FA00AE8E13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -165,9 +167,9 @@
 			isa = PBXGroup;
 			children = (
 				C636E2AF212090EF004DEA6F /* Services */,
-				C6E83AC4211B645600AE8E13 /* Controllers */,
-				C6E83AC5211B646700AE8E13 /* Views */,
 				C6E83AC6211B647400AE8E13 /* Models */,
+				C6E83AC5211B646700AE8E13 /* Views */,
+				C6E83AC4211B645600AE8E13 /* Controllers */,
 				239F2F34211E8B0100C3225F /* Helpers */,
 				C6E83AC7211B64BF00AE8E13 /* SupportFiles */,
 			);
@@ -208,6 +210,7 @@
 				239F2F30211E8AED00C3225F /* LoginCell.swift */,
 				239F2F2E211E8AED00C3225F /* IntroPageCell.swift */,
 				C636E2AB212087B4004DEA6F /* CreditCardCell.swift */,
+				C66E2FBF2120A400009750C6 /* BaseCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -215,7 +218,7 @@
 		C6E83AC6211B647400AE8E13 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				239F2F2F211E8AED00C3225F /* Page.swift */,
+				239F2F2F211E8AED00C3225F /* IntroPage.swift */,
 				C636E2A92120875D004DEA6F /* CreditCard.swift */,
 			);
 			path = Models;
@@ -441,8 +444,9 @@
 				239F2F38211E8B1800C3225F /* UserDefaults+helpers.swift in Sources */,
 				239F2F2C211E8AD700C3225F /* HomeController.swift in Sources */,
 				C6E83A96211B58FA00AE8E13 /* AppDelegate.swift in Sources */,
+				C66E2FC02120A400009750C6 /* BaseCell.swift in Sources */,
 				C636E2AC212087B5004DEA6F /* CreditCardCell.swift in Sources */,
-				239F2F32211E8AED00C3225F /* Page.swift in Sources */,
+				239F2F32211E8AED00C3225F /* IntroPage.swift in Sources */,
 				239F2F33211E8AED00C3225F /* LoginCell.swift in Sources */,
 				C636E2AA2120875D004DEA6F /* CreditCard.swift in Sources */,
 				239F2F31211E8AED00C3225F /* IntroPageCell.swift in Sources */,

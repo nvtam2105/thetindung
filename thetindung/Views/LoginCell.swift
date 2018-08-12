@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginCell: UICollectionViewCell {
+class LoginCell: BaseCell {
     
 //    let logoImageView: UIImageView = {
 //        let image = UIImage(named: "logo")

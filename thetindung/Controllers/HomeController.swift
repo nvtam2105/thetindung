@@ -7,37 +7,36 @@
 //
 
 import UIKit
-//import FBSDKLoginKit
 import Firebase
 
 class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         navigationItem.title = "Home"
-        
+
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Sign Out", style: .plain, target: self, action: #selector(handleSignOut))
-        
+
         collectionView?.backgroundColor = UIColor.white
-        collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellId")
-    
+        collectionView?.register(CreditCardCell.self, forCellWithReuseIdentifier: "cellId")
+
     }
-    
+
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
     }
-    
+
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
+
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath)
         cell.backgroundColor = UIColor.red
         return cell
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: view.frame.width, height: 200)
     }
-    
+
     @objc func handleSignOut() {
         do {
             print("Successfully logged out with our user: ", Auth.auth().currentUser ?? "")
@@ -50,5 +49,5 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
             print("Error trying to sign out of Firebase: \(error.localizedDescription)")
         }
     }
-    
+
 }

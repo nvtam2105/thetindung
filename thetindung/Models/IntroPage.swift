@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Page {
+struct IntroPage {
     let title: String
     let message: String
     let imageName: String

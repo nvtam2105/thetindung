@@ -32,12 +32,12 @@ class LoginController: UIViewController, UICollectionViewDataSource, UICollectio
     let cellId = "cellId"
     let loginCellId = "loginCellId"
     
-    let pages: [Page] = {
-        let firstPage = Page(title: "Share a great listen", message: "It's free to send your books to the people in your life. Every recipient's first book is on us.", imageName: "page1")
+    let pages: [IntroPage] = {
+        let firstPage = IntroPage(title: "Share a great listen", message: "It's free to send your books to the people in your life. Every recipient's first book is on us.", imageName: "page1")
         
-        let secondPage = Page(title: "Send from your library", message: "Tap the More menu next to any book. Choose \"Send this Book\"", imageName: "page2")
+        let secondPage = IntroPage(title: "Send from your library", message: "Tap the More menu next to any book. Choose \"Send this Book\"", imageName: "page2")
         
-        let thirdPage = Page(title: "Send from the player", message: "Tap the More menu in the upper corner. Choose \"Send this Book\"", imageName: "page3")
+        let thirdPage = IntroPage(title: "Send from the player", message: "Tap the More menu in the upper corner. Choose \"Send this Book\"", imageName: "page3")
         
         return [firstPage, secondPage, thirdPage]
     }()

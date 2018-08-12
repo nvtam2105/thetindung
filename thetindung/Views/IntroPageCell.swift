@@ -8,9 +8,9 @@
 
 import UIKit
 
-class IntroPageCell: UICollectionViewCell {
+class IntroPageCell: BaseCell {
     
-    var page: Page? {
+    var page: IntroPage? {
         didSet {
             
             guard let page = page else {
@@ -69,7 +69,7 @@ class IntroPageCell: UICollectionViewCell {
         return view
     }()
     
-    func setupViews() {
+    override func setupViews() {
         addSubview(imageView)
         addSubview(textView)
         addSubview(lineSeparatorView)
