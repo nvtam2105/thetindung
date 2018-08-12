@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PageCell: UICollectionViewCell {
+class IntroPageCell: UICollectionViewCell {
     
     var page: Page? {
         didSet {

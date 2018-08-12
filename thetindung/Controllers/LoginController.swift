@@ -172,7 +172,7 @@ class LoginController: UIViewController, UICollectionViewDataSource, UICollectio
     }
     
     fileprivate func registerCells() {
-        collectionView.register(PageCell.self, forCellWithReuseIdentifier: cellId)
+        collectionView.register(IntroPageCell.self, forCellWithReuseIdentifier: cellId)
         collectionView.register(LoginCell.self, forCellWithReuseIdentifier: loginCellId)
     }
     
@@ -189,7 +189,7 @@ class LoginController: UIViewController, UICollectionViewDataSource, UICollectio
             return loginCell
         }
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! PageCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! IntroPageCell
         
         let page = pages[(indexPath as NSIndexPath).item]
         cell.page = page
