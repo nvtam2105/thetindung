@@ -10,6 +10,10 @@ import UIKit
 import Firebase
 
 class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+    
+    var numOfItems = 2
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,11 +23,13 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
 
         collectionView?.backgroundColor = UIColor.white
         collectionView?.register(CreditCardCell.self, forCellWithReuseIdentifier: "cellId")
-
+        
+        //FirestoreSerivce.sharedInstance.getCards()
+        //FirestoreSerivce.sharedInstance.loadData()
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return 2
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -32,11 +38,23 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
         cell.backgroundColor = UIColor.red
         return cell
     }
-
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: 200)
+    
+    override func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if indexPath.row == 1 {  //numberofitem count
+            updateNextSet()
+        }
     }
 
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: view.frame.width, height: 350)
+    }
+    
+    func updateNextSet(){
+        print("On Completetion")
+        FirestoreSerivce.sharedInstance.loadData()
+        //requests another set of data (20 more items) from the server.
+    }
+    
     @objc func handleSignOut() {
         do {
             print("Successfully logged out with our user: ", Auth.auth().currentUser ?? "")

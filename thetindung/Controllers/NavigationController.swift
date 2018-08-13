@@ -1,5 +1,5 @@
 //
-//  MainNavigationController.swift
+//  NavigationController.swift
 //  audible
 //
 //  Created by Brian Voong on 9/27/16.

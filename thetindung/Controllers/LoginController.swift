@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LoginController.swift
 //  audible
 //
 //  Created by Brian Voong on 9/1/16.
