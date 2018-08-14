@@ -11,48 +11,37 @@ import Firebase
 
 class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
-    var numOfItems = 2
-    
+    var crediCards: [CreditCard] = {
+        return FirestoreSerivce.sharedInstance.fetchCards()
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         navigationItem.title = "Home"
-
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Sign Out", style: .plain, target: self, action: #selector(handleSignOut))
-
         collectionView?.backgroundColor = UIColor.white
         collectionView?.register(CreditCardCell.self, forCellWithReuseIdentifier: "cellId")
         
-        //FirestoreSerivce.sharedInstance.getCards()
-        //FirestoreSerivce.sharedInstance.loadData()
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return crediCards.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath)
-        cell.backgroundColor = UIColor.red
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as! CreditCardCell
+        cell.crediCard = crediCards[indexPath.item]
         return cell
     }
     
-    override func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        if indexPath.row == 1 {  //numberofitem count
-            updateNextSet()
-        }
-    }
-
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: 350)
+        return CGSize(width: view.frame.width, height: view.frame.height - 50)
     }
     
-    func updateNextSet(){
-        print("On Completetion")
-        FirestoreSerivce.sharedInstance.loadData()
-        //requests another set of data (20 more items) from the server.
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
     }
     
     @objc func handleSignOut() {
@@ -67,5 +56,7 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
             print("Error trying to sign out of Firebase: \(error.localizedDescription)")
         }
     }
+    
+    
 
 }

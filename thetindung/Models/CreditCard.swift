@@ -10,7 +10,20 @@ import Foundation
 
 struct CreditCard {
     
+    let documentID: String!
     let type: String
     let bank: String
-    let imageURL: String
+    let image: String
+}
+
+extension CreditCard: FirestoreModel {    
+    
+    init?(modelData: FirestoreModelData) {
+        try? self.init(
+            documentID: modelData.documentID,
+            type: modelData.documentID,
+            bank: modelData.value(forKey: "bank"),
+            image: modelData.value(forKey: "image")
+        )
+    }
 }

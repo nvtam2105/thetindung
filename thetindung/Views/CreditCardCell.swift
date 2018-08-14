@@ -10,14 +10,22 @@ import UIKit
 
 
 class CreditCardCell: BaseCell {
+
+    var crediCard: CreditCard? {
+        didSet {
+            titleLabel.text = crediCard?.bank
+            setupThumbnailImage()
+        }
+    }
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setupViews()
+    func setupThumbnailImage() {
+        if let thumbnailImageUrl = crediCard?.image {
+            thumbnailImageView.loadImageUsingUrlString(thumbnailImageUrl)
+        }
     }
 
-    let thumbnailImageView: UIImageView = {
-        let imageView = UIImageView()
+    let thumbnailImageView: CustomImageView = {
+        let imageView = CustomImageView()
         imageView.backgroundColor = UIColor.blue
         imageView.image = UIImage(named: "vib-bank")
         return imageView

@@ -13,11 +13,9 @@ class FirestoreSerivce: NSObject {
 
 
     static let sharedInstance = FirestoreSerivce()
-
     var lastSnapshot: DocumentSnapshot? = nil
-    var limit: Int = 1
+    var limit: Int = 2
 
-//    // Construct query for first 25 cities, ordered by population
     func getCards() {
         let cardReference = Firestore.firestore().collection("cards")
 
@@ -34,35 +32,29 @@ class FirestoreSerivce: NSObject {
         }
     }
 
-    func loadData() {
+    func fetchCards() -> [CreditCard] {
+        var cards = [CreditCard]()
         let db = Firestore.firestore()
         let collection = db.collection("cards")
-        if lastSnapshot == nil { // first load
+        
+        if self.lastSnapshot == nil {
             let first = collection.limit(to: limit)
-            first.getDocuments() { (querySnapshot, err) in
-                if let err = err {
-                    print("Error getting documents: \(err)")
-                } else {
-                    self.lastSnapshot = querySnapshot!.documents.last!
-                    for document in querySnapshot!.documents {
-                        print("\(document.documentID) => \(document.data())")
-                    }
-                    
+            first.getModels(CreditCard.self) { (creditCards, lastSnapshot, err) in
+                self.lastSnapshot = lastSnapshot
+                for card in creditCards! {
+                    cards.append(card)
                 }
             }
         } else {
             let next = collection.start(afterDocument: self.lastSnapshot!).limit(to: limit)
-            next.getDocuments() { (querySnapshot, err) in
-                if let err = err {
-                    print("Error getting documents: \(err)")
-                } else {
-                    self.lastSnapshot = querySnapshot!.documents.last!
-                    for document in querySnapshot!.documents {
-                        print("\(document.documentID) => \(document.data())")
-                    }
-                    
+            next.getModels(CreditCard.self) { (creditCards, lastSnapshot, err)  in
+                self.lastSnapshot = lastSnapshot
+                for card in creditCards! {
+                    cards.append(card)
                 }
             }
         }
+        print (cards)
+        return cards
     }
 }
