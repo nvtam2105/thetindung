@@ -233,16 +233,16 @@
 		C6E83AC5211B646700AE8E13 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				239F2F2E211E8AED00C3225F /* IntroPageCell.swift */,
+				239F2F30211E8AED00C3225F /* LoginCell.swift */,
+				C66E2FBF2120A400009750C6 /* BaseCell.swift */,
 				235F2739212498D500D95FEA /* MenuBar.swift */,
+				235F27282124932D00D95FEA /* VideoCell.swift */,
+				C636E2AB212087B4004DEA6F /* CreditCardCell.swift */,
 				235F272A2124932D00D95FEA /* FeedCell.swift */,
 				235F272B2124932D00D95FEA /* SettingCell.swift */,
 				235F27272124932C00D95FEA /* SubscriptionCell.swift */,
 				235F272C2124932D00D95FEA /* TrendingCell.swift */,
-				235F27282124932D00D95FEA /* VideoCell.swift */,
-				239F2F30211E8AED00C3225F /* LoginCell.swift */,
-				239F2F2E211E8AED00C3225F /* IntroPageCell.swift */,
-				C636E2AB212087B4004DEA6F /* CreditCardCell.swift */,
-				C66E2FBF2120A400009750C6 /* BaseCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

@@ -16,29 +16,29 @@ class VideoCell: BaseCell {
             
             setupThumbnailImage()
             
-            setupProfileImage()
+            //setupProfileImage()
             
-            if let channelName = video?.channel?.name, let numberOfViews = video?.number_of_views {
-                
-                let numberFormatter = NumberFormatter()
-                numberFormatter.numberStyle = .decimal
-                
-                let subtitleText = "\(channelName) • \(numberFormatter.string(from: numberOfViews)!) • 2 years ago "
-                subtitleTextView.text = subtitleText
-            }
+//            if let channelName = video?.channel?.name, let numberOfViews = video?.number_of_views {
+//
+//                let numberFormatter = NumberFormatter()
+//                numberFormatter.numberStyle = .decimal
+//
+//                let subtitleText = "\(channelName) • \(numberFormatter.string(from: numberOfViews)!) • 2 years ago "
+//                subtitleTextView.text = subtitleText
+//            }
             
             //measure title text
-            if let title = video?.title {
-                let size = CGSize(width: frame.width - 16 - 44 - 8 - 16, height: 1000)
-                let options = NSStringDrawingOptions.usesFontLeading.union(.usesLineFragmentOrigin)
-                let estimatedRect = NSString(string: title).boundingRect(with: size, options: options, attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 14)], context: nil)
-                
-                if estimatedRect.size.height > 20 {
-                    titleLabelHeightConstraint?.constant = 44
-                } else {
-                    titleLabelHeightConstraint?.constant = 20
-                }
-            }
+//            if let title = video?.title {
+//                let size = CGSize(width: frame.width - 16 - 44 - 8 - 16, height: 1000)
+//                let options = NSStringDrawingOptions.usesFontLeading.union(.usesLineFragmentOrigin)
+//                let estimatedRect = NSString(string: title).boundingRect(with: size, options: options, attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 14)], context: nil)
+//                
+//                if estimatedRect.size.height > 20 {
+//                    titleLabelHeightConstraint?.constant = 44
+//                } else {
+//                    titleLabelHeightConstraint?.constant = 20
+//                }
+//            }
             
             
         }
