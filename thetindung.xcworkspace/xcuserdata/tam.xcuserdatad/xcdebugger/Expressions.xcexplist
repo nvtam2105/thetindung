@@ -3,6 +3,17 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "HomeController.collectionView(_:cellForItemAt:):HomeController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "HomeController.collectionView(_:numberOfItemsInSection:):HomeController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.creditCards?.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "HomeController.handleSignOut():HomeController.swift">
          <PersistentStrings>
             <PersistentString

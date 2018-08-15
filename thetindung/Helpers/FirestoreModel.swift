@@ -128,10 +128,10 @@ extension Query {
             }
             
             guard let snapshot = snapshot else {
-                completion(nil, nil, nil)
+            completion(nil, nil, nil)
                 return
             }
-            completion(snapshot.documents.flatMap { Model(modelData: FirestoreModelData(snapshot: $0)) }, snapshot.documents.last! ,nil)
+            completion(snapshot.documents.compactMap { Model(modelData: FirestoreModelData(snapshot: $0)) }, snapshot.documents.last! ,nil)
         }
     }
 }

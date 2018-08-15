@@ -11,15 +11,20 @@ import UIKit
 
 class CreditCardCell: BaseCell {
 
-    var crediCard: CreditCard? {
+    var creditCard: CreditCard? {
         didSet {
-            titleLabel.text = crediCard?.bank
+            titleLabel.text = creditCard?.bank
             setupThumbnailImage()
         }
     }
     
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupViews()
+    }
+    
     func setupThumbnailImage() {
-        if let thumbnailImageUrl = crediCard?.image {
+        if let thumbnailImageUrl = creditCard?.image {
             thumbnailImageView.loadImageUsingUrlString(thumbnailImageUrl)
         }
     }

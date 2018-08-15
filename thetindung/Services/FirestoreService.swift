@@ -31,9 +31,9 @@ class FirestoreSerivce: NSObject {
             }
         }
     }
-
-    func fetchCards() -> [CreditCard] {
-        var cards = [CreditCard]()
+    
+    func fetchCards(_ completion: @escaping ([CreditCard]) -> ()) {
+        //var cards = [CreditCard]()
         let db = Firestore.firestore()
         let collection = db.collection("cards")
         
@@ -41,20 +41,19 @@ class FirestoreSerivce: NSObject {
             let first = collection.limit(to: limit)
             first.getModels(CreditCard.self) { (creditCards, lastSnapshot, err) in
                 self.lastSnapshot = lastSnapshot
-                for card in creditCards! {
-                    cards.append(card)
-                }
+                //cards = creditCards!
+                //print (cards)
             }
         } else {
             let next = collection.start(afterDocument: self.lastSnapshot!).limit(to: limit)
             next.getModels(CreditCard.self) { (creditCards, lastSnapshot, err)  in
                 self.lastSnapshot = lastSnapshot
-                for card in creditCards! {
-                    cards.append(card)
-                }
+                //cards = creditCards!
+                //print (cards)
             }
         }
-        print (cards)
-        return cards
+        //print (cards)
+        //return cards
+        
     }
 }
