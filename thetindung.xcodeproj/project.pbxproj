@@ -18,6 +18,8 @@
 		235F27362124936D00D95FEA /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235F27342124936D00D95FEA /* HomeController.swift */; };
 		235F27382124937C00D95FEA /* VideoLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235F27372124937B00D95FEA /* VideoLauncher.swift */; };
 		235F273A212498D500D95FEA /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235F2739212498D500D95FEA /* MenuBar.swift */; };
+		235F27412125E57500D95FEA /* RefreshControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235F27402125E57400D95FEA /* RefreshControlView.swift */; };
+		235F27432125EE5800D95FEA /* RefreshControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235F27422125EE5800D95FEA /* RefreshControlView.xib */; };
 		23928D08211E9D55003F83EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23928D07211E9D55003F83EB /* GoogleService-Info.plist */; };
 		239F2F2B211E8AD700C3225F /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F2F28211E8AD700C3225F /* NavigationController.swift */; };
 		239F2F2D211E8AD700C3225F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F2F2A211E8AD700C3225F /* LoginController.swift */; };
@@ -72,6 +74,8 @@
 		235F27342124936D00D95FEA /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		235F27372124937B00D95FEA /* VideoLauncher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoLauncher.swift; sourceTree = "<group>"; };
 		235F2739212498D500D95FEA /* MenuBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
+		235F27402125E57400D95FEA /* RefreshControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshControlView.swift; sourceTree = "<group>"; };
+		235F27422125EE5800D95FEA /* RefreshControlView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RefreshControlView.xib; sourceTree = "<group>"; };
 		23928D07211E9D55003F83EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		239F2F28211E8AD700C3225F /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		239F2F2A211E8AD700C3225F /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -127,6 +131,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		235F273B2125E4AE00D95FEA /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+				235F27402125E57400D95FEA /* RefreshControlView.swift */,
+				235F27422125EE5800D95FEA /* RefreshControlView.xib */,
+			);
+			path = CustomControls;
+			sourceTree = "<group>";
+		};
 		239F2F34211E8B0100C3225F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +209,7 @@
 				C6E83AC6211B647400AE8E13 /* Models */,
 				C636E2AF212090EF004DEA6F /* Services */,
 				239F2F34211E8B0100C3225F /* Helpers */,
+				235F273B2125E4AE00D95FEA /* CustomControls */,
 				C6E83AC7211B64BF00AE8E13 /* SupportFiles */,
 			);
 			path = thetindung;
@@ -379,6 +393,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				235F27432125EE5800D95FEA /* RefreshControlView.xib in Resources */,
 				C6E83AA0211B58FA00AE8E13 /* LaunchScreen.storyboard in Resources */,
 				23928D08211E9D55003F83EB /* GoogleService-Info.plist in Resources */,
 				C6E83A9D211B58FA00AE8E13 /* Assets.xcassets in Resources */,
@@ -477,6 +492,7 @@
 				235F2724212492FE00D95FEA /* ApiService.swift in Sources */,
 				239F2F38211E8B1800C3225F /* UserDefaults+helpers.swift in Sources */,
 				235F273A212498D500D95FEA /* MenuBar.swift in Sources */,
+				235F27412125E57500D95FEA /* RefreshControlView.swift in Sources */,
 				235F272E2124932D00D95FEA /* VideoCell.swift in Sources */,
 				235F27382124937C00D95FEA /* VideoLauncher.swift in Sources */,
 				C6E83A96211B58FA00AE8E13 /* AppDelegate.swift in Sources */,
