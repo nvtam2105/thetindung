@@ -15,9 +15,11 @@ class NavigationController: UINavigationController {
         
         if isLoggedIn() {
             //assume user is logged in
-            let layout = UICollectionViewFlowLayout()
-            let homeController = HomeController(collectionViewLayout: layout)
-            viewControllers = [homeController]
+//            let layout = UICollectionViewFlowLayout()
+//            let homeController = HomeController(collectionViewLayout: layout)
+//            viewControllers = [homeController]
+            let searchController = SearchController()
+            viewControllers = [searchController]
         } else {
             perform(#selector(showLoginController), with: nil, afterDelay: 0.01)
         }

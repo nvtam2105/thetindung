@@ -22,13 +22,13 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
         navigationController?.navigationBar.isTranslucent = false
         
         let titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.width - 32, height: view.frame.height))
-        titleLabel.text = "  Home"
+        titleLabel.text = "Home"
         titleLabel.textColor = UIColor.white
         titleLabel.font = UIFont.systemFont(ofSize: 20)
         navigationItem.titleView = titleLabel
         
         setupCollectionView()
-        setupMenuBar()
+        //setupMenuBar()
         setupNavBarButtons()
     }
     
@@ -40,22 +40,23 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
         
         collectionView?.backgroundColor = UIColor.white
         collectionView?.register(FeedCell.self, forCellWithReuseIdentifier: cellId)
-        collectionView?.register(TrendingCell.self, forCellWithReuseIdentifier: trendingCellId)
-        collectionView?.register(SubscriptionCell.self, forCellWithReuseIdentifier: subscriptionCellId)
+        //collectionView?.register(TrendingCell.self, forCellWithReuseIdentifier: trendingCellId)
+        //collectionView?.register(SubscriptionCell.self, forCellWithReuseIdentifier: subscriptionCellId)
         
         collectionView?.contentInset = UIEdgeInsetsMake(50, 0, 0, 0)
         collectionView?.scrollIndicatorInsets = UIEdgeInsetsMake(50, 0, 0, 0)
         
-        collectionView?.isPagingEnabled = true
+        //collectionView?.isPagingEnabled = true
     }
     
     func setupNavBarButtons() {
-        let searchImage = UIImage(named: "search_icon")?.withRenderingMode(.alwaysOriginal)
-        let searchBarButtonItem = UIBarButtonItem(image: searchImage, style: .plain, target: self, action: #selector(handleSearch))
+        //let searchImage = UIImage(named: "search_icon")?.withRenderingMode(.alwaysOriginal)
+        //let searchBarButtonItem = UIBarButtonItem(image: searchImage, style: .plain, target: self, action: #selector(handleSearch))
         
         let moreButton = UIBarButtonItem(image: UIImage(named: "nav_more_icon")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(handleMore))
         
-        navigationItem.rightBarButtonItems = [moreButton, searchBarButtonItem]
+        //navigationItem.rightBarButtonItems = [moreButton, searchBarButtonItem]
+        navigationItem.rightBarButtonItems = [moreButton]
     }
     
     lazy var settingsLauncher: SettingsLauncher = {
@@ -153,7 +154,8 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: view.frame.height - 50)
+        //return CGSize(width: view.frame.width, height: view.frame.height - 50)
+        return CGSize(width: view.frame.width, height: view.frame.height )
     }
     
     

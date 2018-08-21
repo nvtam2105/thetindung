@@ -12,4 +12,5 @@ target 'thetindung' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
+  pod 'SwiftyButton'
 end

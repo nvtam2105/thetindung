@@ -39,8 +39,6 @@ class VideoCell: BaseCell {
 //                    titleLabelHeightConstraint?.constant = 20
 //                }
 //            }
-            
-            
         }
     }
     

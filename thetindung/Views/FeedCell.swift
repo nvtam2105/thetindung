@@ -22,6 +22,7 @@ class FeedCell: BaseCell, UICollectionViewDataSource, UICollectionViewDelegate, 
     var footerView:RefreshControlView?
     
     var videos: [Video]?
+    
     var creditCards: [CreditCard]?
     var isLoading:Bool = false
     
@@ -94,7 +95,7 @@ class FeedCell: BaseCell, UICollectionViewDataSource, UICollectionViewDelegate, 
 //    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: frame.width, height: frame.height/2)
+        return CGSize(width: frame.width, height: frame.height)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -167,8 +168,7 @@ class FeedCell: BaseCell, UICollectionViewDataSource, UICollectionViewDelegate, 
         let frameHeight = scrollView.bounds.size.height;
         let pullHeight  = fabs(diffHeight - frameHeight);
         print("pullHeight:\(pullHeight)");
-        if pullHeight == 0.0
-        {
+        if pullHeight == 0.0 {
             if (self.footerView?.isAnimatingFinal)! {
                 print("load more trigger")
                 self.isLoading = true
@@ -181,11 +181,6 @@ class FeedCell: BaseCell, UICollectionViewDataSource, UICollectionViewDelegate, 
             }
         }
     }
-
-
-    
-
-
 }
 
 

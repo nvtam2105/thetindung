@@ -85,6 +85,7 @@ PODS:
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
   - Protobuf (3.6.1)
+  - SwiftyButton (0.8.2)
 
 DEPENDENCIES:
   - FBSDKCoreKit
@@ -93,6 +94,7 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Firestore
+  - SwiftyButton
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -116,6 +118,7 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - Protobuf
+    - SwiftyButton
 
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
@@ -138,7 +141,8 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
+  SwiftyButton: 5b0ef314e9cf61cf8a83e456ddd1ea1f53f30598
 
-PODFILE CHECKSUM: f7fad4e5094c14d1d9b10f95775833d51243fff0
+PODFILE CHECKSUM: 2c5e86beed3c4f38ea4f2275ae0b55a9b70cc11b
 
 COCOAPODS: 1.5.3

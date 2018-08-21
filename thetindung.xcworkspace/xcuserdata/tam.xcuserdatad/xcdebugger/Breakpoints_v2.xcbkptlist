@@ -10,93 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "thetindung/Views/FeedCell.swift"
-            timestampString = "556135057.766127"
+            timestampString = "556382800.436992"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "unknown"
-            landmarkType = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "thetindung/Views/FeedCell.swift"
-            timestampString = "556135057.785332"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "unknown"
-            landmarkType = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "thetindung/Views/FeedCell.swift"
-            timestampString = "556135057.78704"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "unknown"
-            landmarkType = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "thetindung/Helpers/FirestoreModel.swift"
-            timestampString = "556133888.638057"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
-            landmarkName = "getModels(_:completion:)"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
+            landmarkName = "scrollViewDidScroll(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;__ObjC.QuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in (extension in thetindung):__ObjC.Query.getModels&lt;A where A: thetindung.FirestoreModel&gt;(A.Type, completion: (Swift.Optional&lt;Swift.Array&lt;A&gt;&gt;, Swift.Optional&lt;__ObjC.DocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "thetindung"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tam/workspace/mobile/3tm/thetindung/Helpers/FirestoreModel.swift"
-                  timestampString = "556052074.0249161"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "134"
-                  endingLineNumber = "134"
-                  offsetFromSymbolStart = "386">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__ObjC.DocumentSnapshot) -&gt; Swift.Optional&lt;A&gt; in closure #1 (Swift.Optional&lt;__ObjC.QuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in (extension in thetindung):__ObjC.Query.getModels&lt;A where A: thetindung.FirestoreModel&gt;(A.Type, completion: (Swift.Optional&lt;Swift.Array&lt;A&gt;&gt;, Swift.Optional&lt;__ObjC.DocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "thetindung"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tam/workspace/mobile/3tm/thetindung/Helpers/FirestoreModel.swift"
-                  timestampString = "556052074.028155"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "134"
-                  endingLineNumber = "134"
-                  offsetFromSymbolStart = "18">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -106,13 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "thetindung/Views/FeedCell.swift"
-            timestampString = "556135057.788988"
+            timestampString = "556382800.439595"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "176"
-            endingLineNumber = "176"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "157"
+            endingLineNumber = "157"
+            landmarkName = "scrollViewDidScroll(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -122,29 +42,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "thetindung/Views/FeedCell.swift"
-            timestampString = "556135057.7898951"
+            timestampString = "556382800.440179"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "165"
-            endingLineNumber = "165"
-            landmarkName = "unknown"
-            landmarkType = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "thetindung/Views/FeedCell.swift"
-            timestampString = "556135057.790644"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "170"
-            endingLineNumber = "170"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "158"
+            endingLineNumber = "158"
+            landmarkName = "scrollViewDidScroll(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

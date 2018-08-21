@@ -36,13 +36,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
         
         application.statusBarStyle = .lightContent
-        
-        let statusBarBackgroundView = UIView()
-        statusBarBackgroundView.backgroundColor = UIColor.rgb(194, green: 31, blue: 31)
-        
-        window?.addSubview(statusBarBackgroundView)
-        window?.addConstraintsWithFormat("H:|[v0]|", views: statusBarBackgroundView)
-        window?.addConstraintsWithFormat("V:|[v0(20)]", views: statusBarBackgroundView)
+//
+//        let statusBarBackgroundView = UIView()
+//        statusBarBackgroundView.backgroundColor = UIColor.rgb(194, green: 31, blue: 31)
+//
+//        window?.addSubview(statusBarBackgroundView)
+//        window?.addConstraintsWithFormat("H:|[v0]|", views: statusBarBackgroundView)
+//        window?.addConstraintsWithFormat("V:|[v0(20)]", views: statusBarBackgroundView)
         
         
         FirebaseApp.configure()

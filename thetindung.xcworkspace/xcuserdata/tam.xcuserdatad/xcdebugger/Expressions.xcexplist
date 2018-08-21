@@ -3,13 +3,18 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "HomeController.collectionView(_:cellForItemAt:):HomeController.swift">
-      </ContextState>
-      <ContextState
          contextName = "HomeController.collectionView(_:numberOfItemsInSection:):HomeController.swift">
          <PersistentStrings>
             <PersistentString
                value = "self.creditCards?.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in Query.getModels&lt;A&gt;(_:completion:):FirestoreModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "snapshot.documents">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -23,6 +28,17 @@
                value = "Auth.auth().currentUser">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in closure #1 in Query.getModels&lt;A&gt;(_:completion:):FirestoreModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "snapshot">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "HomeController.collectionView(_:cellForItemAt:):HomeController.swift">
       </ContextState>
    </ContextStates>
 </VariablesViewState>

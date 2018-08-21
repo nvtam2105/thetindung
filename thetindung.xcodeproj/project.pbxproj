@@ -20,6 +20,9 @@
 		235F273A212498D500D95FEA /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235F2739212498D500D95FEA /* MenuBar.swift */; };
 		235F27412125E57500D95FEA /* RefreshControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235F27402125E57400D95FEA /* RefreshControlView.swift */; };
 		235F27432125EE5800D95FEA /* RefreshControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235F27422125EE5800D95FEA /* RefreshControlView.xib */; };
+		2387C4A42127253D00499B29 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2387C4A32127253C00499B29 /* CustomTabBarController.swift */; };
+		2387C4A62127BE4500499B29 /* DropDownBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2387C4A52127BE4500499B29 /* DropDownBtn.swift */; };
+		2387C4A82127BEA100499B29 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2387C4A72127BEA100499B29 /* SearchController.swift */; };
 		23928D08211E9D55003F83EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23928D07211E9D55003F83EB /* GoogleService-Info.plist */; };
 		239F2F2B211E8AD700C3225F /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F2F28211E8AD700C3225F /* NavigationController.swift */; };
 		239F2F2D211E8AD700C3225F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F2F2A211E8AD700C3225F /* LoginController.swift */; };
@@ -76,6 +79,9 @@
 		235F2739212498D500D95FEA /* MenuBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
 		235F27402125E57400D95FEA /* RefreshControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshControlView.swift; sourceTree = "<group>"; };
 		235F27422125EE5800D95FEA /* RefreshControlView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RefreshControlView.xib; sourceTree = "<group>"; };
+		2387C4A32127253C00499B29 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		2387C4A52127BE4500499B29 /* DropDownBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownBtn.swift; sourceTree = "<group>"; };
+		2387C4A72127BEA100499B29 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		23928D07211E9D55003F83EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		239F2F28211E8AD700C3225F /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		239F2F2A211E8AD700C3225F /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -136,6 +142,7 @@
 			children = (
 				235F27402125E57400D95FEA /* RefreshControlView.swift */,
 				235F27422125EE5800D95FEA /* RefreshControlView.xib */,
+				2387C4A52127BE4500499B29 /* DropDownBtn.swift */,
 			);
 			path = CustomControls;
 			sourceTree = "<group>";
@@ -236,10 +243,12 @@
 		C6E83AC4211B645600AE8E13 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2387C4A32127253C00499B29 /* CustomTabBarController.swift */,
 				235F27342124936D00D95FEA /* HomeController.swift */,
 				235F27332124936D00D95FEA /* SettingsLauncher.swift */,
 				239F2F2A211E8AD700C3225F /* LoginController.swift */,
 				239F2F28211E8AD700C3225F /* NavigationController.swift */,
+				2387C4A72127BEA100499B29 /* SearchController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -451,6 +460,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyButton/SwiftyButton.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
@@ -468,6 +478,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
@@ -490,13 +501,16 @@
 				239F2F2B211E8AD700C3225F /* NavigationController.swift in Sources */,
 				C636E2AE212088F4004DEA6F /* FirestoreService.swift in Sources */,
 				235F2724212492FE00D95FEA /* ApiService.swift in Sources */,
+				2387C4A82127BEA100499B29 /* SearchController.swift in Sources */,
 				239F2F38211E8B1800C3225F /* UserDefaults+helpers.swift in Sources */,
 				235F273A212498D500D95FEA /* MenuBar.swift in Sources */,
+				2387C4A62127BE4500499B29 /* DropDownBtn.swift in Sources */,
 				235F27412125E57500D95FEA /* RefreshControlView.swift in Sources */,
 				235F272E2124932D00D95FEA /* VideoCell.swift in Sources */,
 				235F27382124937C00D95FEA /* VideoLauncher.swift in Sources */,
 				C6E83A96211B58FA00AE8E13 /* AppDelegate.swift in Sources */,
 				235F27322124932D00D95FEA /* TrendingCell.swift in Sources */,
+				2387C4A42127253D00499B29 /* CustomTabBarController.swift in Sources */,
 				C6A3D7D82121E8BE0042D244 /* FirestoreModel.swift in Sources */,
 				C66E2FC02120A400009750C6 /* BaseCell.swift in Sources */,
 				C636E2AC212087B5004DEA6F /* CreditCardCell.swift in Sources */,
